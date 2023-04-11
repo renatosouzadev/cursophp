@@ -40,7 +40,7 @@ input, label{
 }
 label.moeda{
     position: absolute;
-    left: 180px;
+    left: calc(50% -20px);
     top: 174.5px;
 }
 input[type="number"]{
