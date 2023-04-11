@@ -11,12 +11,13 @@
     <main>
         <ul>
             <?php 
-                $numero = $_GET["numero"];
+                $numero = $_GET["numero"] ?? 0;
                 $antecessor = $_GET["numero"] - 1;
                 $sucessor = $_GET["numero"] + 1;
-                echo "<li>O antecessor de $numero é igual a: $antecessor</li>";
-                echo "<li>O sucessor de $numero é igual a: $sucessor</li>";
+                echo "<li>O antecessor de <strong>$numero</strong> é igual a: <strong>$antecessor</strong></li>";
+                echo "<li>O sucessor de <strong>$numero</strong> é igual a: <strong>$sucessor</strong></li>";
             ?>
+            <a href="index.html" class="botao">Voltar para a página anterior</a>
         </ul>
     </main>
 </body>
