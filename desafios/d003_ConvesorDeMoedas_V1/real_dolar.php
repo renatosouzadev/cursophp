@@ -22,10 +22,16 @@
         <section class="resultado">
             <p>
                 <?php 
-
+                    //valor m reais do formulário
                     $valor_real = $_GET['valor'];
-                    $valor_dolar = 5.07;
+
+                    //valor do dolar em reais em 11/04/2023
+                    $valor_dolar = 5;
+
+                    //conversão de moedas, formatação do valor
                     $valor_dolar_convertido = round(($valor_real / $valor_dolar), 2);
+
+                    //mostrar na tela
                     echo "<strong>$valor_real Reais</strong> equivalem a <strong>$valor_dolar_convertido Dolares</strong>. O atual valor do dolar é <strong>R$:$valor_dolar</strong>.";
                 ?>
             </p>
